@@ -10,23 +10,8 @@ function App() {
   // const [error, setError] = useState(null);
   const [tasks, setTasks] = useState([]);
 
-  const transformTasks = (tasksObj) => {
-    const loadedTasks = [];
-
-    for (const taskKey in tasksObj) {
-      loadedTasks.push({ id: taskKey, text: tasksObj[taskKey].text });
-    }
-
-    setTasks(loadedTasks);
-  };
-
   // Rename sendRequest to fetchTasks
-  const { isLoading, error, sendRequest: fetchTasks }  = useHttp(
-    {
-      url: "https://onwards-to-a-more-realistic-eg-default-rtdb.asia-southeast1.firebasedatabase.app/tasks.json",
-    },
-    transformTasks
-  );
+  const { isLoading, error, sendRequest: fetchTasks } = useHttp();
 
   // const fetchTasks = async (taskText) => {
   //   setIsLoading(true);
@@ -56,8 +41,20 @@ function App() {
   // };
 
   useEffect(() => {
-    fetchTasks();
-  }, []);
+    const transformTasks = (tasksObj) => {
+      const loadedTasks = [];
+  
+      for (const taskKey in tasksObj) {
+        loadedTasks.push({ id: taskKey, text: tasksObj[taskKey].text });
+      }
+  
+      setTasks(loadedTasks);
+    };
+
+    fetchTasks({
+      url: "https://onwards-to-a-more-realistic-eg-default-rtdb.asia-southeast1.firebasedatabase.app/tasks.json",
+    }, transformTasks);
+  }, [fetchTasks]);
 
   const taskAddHandler = (task) => {
     setTasks((prevTasks) => prevTasks.concat(task));
