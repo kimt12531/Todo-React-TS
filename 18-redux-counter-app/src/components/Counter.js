@@ -1,4 +1,4 @@
-import { counterActions } from "../store/index";
+import { counterActions } from "../store/counter";
 
 // import useSelector
 // import useDispatch
