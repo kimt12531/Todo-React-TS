@@ -6,7 +6,7 @@ import Cart from "./components/Cart/Cart";
 import Layout from "./components/Layout/Layout";
 import Products from "./components/Shop/Products";
 // import { uiActions } from "./store/ui-slice";
-import { sendCartData } from "./store/cart-slice";
+import { sendCartData } from "./store/cart-actions";
 
 // is not set everytime App renders, hence declare outside
 let isInitial = true;
@@ -54,7 +54,7 @@ function App() {
       return;
     }
 
-    dispatch(sendCartData(cart))
+    dispatch(sendCartData(cart));
 
     // sendCartData().catch((error) => {
     //   dispatch(
