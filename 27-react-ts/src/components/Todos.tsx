@@ -1,10 +1,15 @@
-function Todos() {
+import React from "react";
+
+// FC stands for Functional Component
+// has children prop
+const Todos: React.FC<{ items: string[] }> = (props) => {
   return (
     <ul>
-      <li>Learn React</li>
-      <li>Learn Typescript</li>
+      {props.items.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
     </ul>
   );
-}
+};
 
 export default Todos;
