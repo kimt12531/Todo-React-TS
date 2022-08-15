@@ -1,7 +1,6 @@
 .form {
   width: 40rem;
   margin: 2rem auto;
-  
 }
 
 .form label {
@@ -39,4 +38,8 @@
 .form button:active {
   background-color: #ebc002;
   border-color: #ebc002;
+}
+
+p {
+  color: firebrick;
 }
