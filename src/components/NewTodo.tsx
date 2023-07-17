@@ -1,7 +1,5 @@
 import React, { useState, useRef, useContext, FocusEvent } from "react";
-
 import classes from "./NewTodo.module.css";
-
 import { TodosContext } from "../store/todos-context";
 
 const NewTodo: React.FC = () => {
