@@ -8,11 +8,9 @@ const NewTodo: React.FC = () => {
 
   const todoTextInput = useRef<HTMLInputElement>(null);
 
-  // FormEvent
   const submitHandler = (event: React.FormEvent) => {
     event.preventDefault();
 
-    // ! - will never be null
     const enteredText = todoTextInput.current!.value;
 
     if (enteredText.trim().length === 0) {
