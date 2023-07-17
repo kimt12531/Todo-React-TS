@@ -29,15 +29,20 @@ Clicking Add Todo item with empty text will result in an error message in red as
 ## Prerequisites
 - Please ensure that you have [npm and node installed](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) on your local machine.
 - Clone this remote repository
+
 `git clone git@github.com:kimt12531/Todo-React-TS.git`
 
 ## Installing dependencies
 Open the root directory of this project in your terminal.
 
-Run the command `npm install` to install packages.
+Run the following command to install packages:
+
+`npm install` 
 
 ## Running this application locally
-Run the command `npm start` to start the application.
+Run the following command to start the application:
+
+`npm start` 
 
 Wait until the message "Compiled successfully!" appears in the terminal. 
 
