@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# Simple Todo List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Todo List Frontend application developed with React and TypeScript.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Create and add new items to the Todo List
+Type a new Todo into the text box (above the "Add Todo" button).
+![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/0b47cbd3-9119-486e-9310-972b96f6359d)
 
-### `npm start`
+Click on "Add Todo" to add the new Todo item to the list.
+![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/ddb1befa-119c-4a6c-bf04-21f3418be272)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Delete existing items in the Todo List
+Click on the item in the Todo List (below the "Add Todo" button) to remove it.
 
-### `npm test`
+<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Error checking for empty Todo text
+Users cannot add a new Todo item with empty text.
 
-### `npm run build`
+Clicking Add Todo item with empty text will result in an error message in red as shown in the screenshot below:
+![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/fc62ac7a-e96a-4ff2-8272-e5cbbd662892)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Prerequisites
+- Please ensure that you have [npm and node installed](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) on your local machine.
+- Clone this remote repository
+`git clone git@github.com:kimt12531/Todo-React-TS.git`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installing dependencies
+Open the root directory of this project in your terminal.
+Run the command `npm install` to install packages.
 
-### `npm run eject`
+## Running this application locally
+Run the command `npm start` to start the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Wait until the message "Compiled successfully!" appears in the terminal. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/bdac95b5-c96b-4079-8966-5e517ac474e1)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application will run on a localhost (e.g., http://localhost:3000), which may have already opened a new tab on your browser where you can view the application.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You may find the specific port number in the terminal after the application had successfully compiled.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
