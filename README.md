@@ -33,6 +33,7 @@ Clicking Add Todo item with empty text will result in an error message in red as
 
 ## Installing dependencies
 Open the root directory of this project in your terminal.
+
 Run the command `npm install` to install packages.
 
 ## Running this application locally
