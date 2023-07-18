@@ -1,8 +1,9 @@
 import React, { useState, useRef, useContext, FocusEvent } from "react";
 import classes from "./NewTodo.module.css";
 import { TodosContext } from "../store/todos-context";
+import { Constants } from "../utils/constants";
 
-const NewTodo: React.FC = () => {
+const NewTodo = () => {
   const [isEmpty, setIsEmpty] = useState<Boolean>(false);
   const todosCtx = useContext(TodosContext);
 
@@ -25,14 +26,12 @@ const NewTodo: React.FC = () => {
     setIsEmpty(false);
   };
 
-  const emptyInputNotification = <p>Todo text cannot be empty.</p>;
-
   return (
     <form className={classes.form} onSubmit={submitHandler}>
-      <label htmlFor="text">Todo text</label>
+      <label htmlFor="text">{Constants.TODO_TEXT_LABEL}</label>
       <input type="text" id="text" onFocus={focusHandler} ref={todoTextInput} />
-      <button>Add Todo</button>
-      {isEmpty && emptyInputNotification}
+      <button>{Constants.ADD_TODO_BUTTON}</button>
+      {isEmpty && <p>{Constants.EMPTY_TODO_TEXT}</p>}
     </form>
   );
 };

@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { TodosContext } from "../store/todos-context";
-import classes from "./ClearAllButton.module.css";
+import classes from "./ClearAll.module.css";
+import { Constants } from "../utils/constants";
 
-const ClearAllButton = () => {
+const ClearAll = () => {
     const todosCtx = useContext(TodosContext);
 
     const clearClickHandler = () => {
@@ -11,9 +12,9 @@ const ClearAllButton = () => {
 
     return (
         <div className={classes.clear}>
-            {todosCtx.items.length > 0 && <button onClick={clearClickHandler}>Clear All</button>}
+            {todosCtx.items.length > 0 && <button onClick={clearClickHandler}>{Constants.CLEAR_ALL_BUTTON}</button>}
         </div>
     );
 };
 
-export default ClearAllButton;
+export default ClearAll;
