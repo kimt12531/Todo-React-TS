@@ -9,12 +9,14 @@ Type a new Todo into the text box (above the "Add Todo" button).
 ![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/102ae68a-2e39-42b2-975d-9e628015062e)
 
 Click on "Add Todo" to add the new Todo item to the list.
-![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/1a0d83cd-05c6-46d9-a33f-7737f0869cb8)
+![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/efbdc1dd-b008-4e1a-a99d-1a0c9311306a)
 
 <br />
 
 ### Delete existing items in the Todo List
-Click on the item in the Todo List (below the "Add Todo" button) to remove it.
+Click on the "Delete" button next to an item in the Todo List to remove it.
+
+The whole list can also be cleared by clicking the "Clear All" button.
 
 <br />
 
@@ -22,7 +24,13 @@ Click on the item in the Todo List (below the "Add Todo" button) to remove it.
 Users cannot add a new Todo item with empty text.
 
 Clicking Add Todo item with empty text will result in an error message in red as shown in the screenshot below:
-![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/f77c67df-ee7b-4900-b414-12ace6b0f535)
+![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/e2be49b6-21b7-46fc-88ca-0f2d4dfee8b0)
+
+### Edit text of existing item
+Click on the "Edit" button next to an item in the Todo List to bring up a modal to edit the text. Type the new Todo text and click "Edit todo" to update the Todo item.
+![image](https://github.com/kimt12531/Todo-React-TS/assets/79815856/9dcd67da-070f-41af-9c5f-bf567dd6f002)
+
+This modal can be closed by clicking anywhere on the backdrop outside the of it.
 
 <br />
 
